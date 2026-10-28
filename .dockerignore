@@ -1,0 +1,13 @@
+.git
+.agents
+.aws
+.codex
+instructor
+reports
+dist
+evidence
+scripts/validate.py
+scripts/course_audit.py
+__pycache__
+*.pyc
+.venv

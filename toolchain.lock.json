@@ -1,0 +1,29 @@
+{
+  "runtime": {
+    "implementation": "CPython",
+    "tested_version": "3.14.6",
+    "supported_version": ">=3.11",
+    "compiler": "GCC 13.3.0",
+    "dependencies": "stdlib-only",
+    "license": "PSF-2.0",
+    "source": "https://docs.python.org/3/license.html"
+  },
+  "tested_environment": {
+    "os": "Ubuntu 24.04",
+    "kernel": "7.0.0-38-generic",
+    "architecture": "x86_64"
+  },
+  "development_tools": {
+    "make": {"version": "4.3", "license": "GPL-3.0-or-later", "source": "https://www.gnu.org/software/make/"},
+    "git": {"version": "2.43.0", "license": "GPL-2.0", "source": "https://github.com/git/git/blob/master/COPYING"},
+    "docker_cli": {"version": "29.9.2", "license": "Apache-2.0", "source": "https://github.com/docker/cli", "daemon_status": "not-running"}
+  },
+  "container": {
+    "target_image": "python:3.14.6-slim-bookworm",
+    "digest": null,
+    "verification_status": "not-run",
+    "verification_note": "Registry 查询遭遇 TLS EOF；Docker daemon 未运行。",
+    "source": "https://hub.docker.com/_/python",
+    "base_components_license": "Debian 组件各自的许可证"
+  }
+}
